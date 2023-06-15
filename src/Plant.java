@@ -22,5 +22,41 @@ public class Plant {
         this.name = name;
     }
 
+    public void setLatinName(String latinName) {
+        this.latinName = latinName;
+    }
+
+    public void setYear(boolean year) {
+        this.year = year;
+    }
+
+    public void setContinent(String continent) {
+        this.continent = continent;
+    }
+
+    public void setPlantHigh(int plantHigh) {
+        this.plantHigh = plantHigh;
+    }
+
+    public void setEdible(boolean edible) {
+        this.edible = edible;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getLatinName() {
+        return this.latinName;
+    }
+
+    public String getContinent() {
+        return this.continent;
+    }
+    public int getPlantHigh(){
+        return this.plantHigh;
+    }
+
+
 
 }

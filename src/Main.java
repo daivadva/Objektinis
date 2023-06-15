@@ -43,8 +43,11 @@ public class Main {
         for (int i = 0; i < knygynas.size(); i++) {
             System.out.println(knygynas.get(i).getTitle() + ", " +knygynas.get(i).getPages() + ", " +knygynas.get(i).getReleaseYear());
         }
+        System.out.println("................................................");
 
 
+        Plant plant1 = new Plant();
+        plant1.setName();
 
     }
 
