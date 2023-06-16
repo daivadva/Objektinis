@@ -1,18 +1,18 @@
 public class Plant {
     private String name;
     private String latinName;
-    private boolean year;
+    private boolean annualPlant; //true = annual, false = perennial
     private String continent;
     private int plantHigh;
-    private boolean edible;
+    private boolean edible; // true = edible, false = perennial
 
     public Plant() {
     }
 
-    public Plant(String name, String latinName, boolean year, String continent, int plantHigh, boolean edible) {
+    public Plant(String name, String latinName, boolean annualPlant, String continent, int plantHigh, boolean edible) {
         this.name = name;
         this.latinName = latinName;
-        this.year = year;
+        this.annualPlant = annualPlant;
         this.continent = continent;
         this.plantHigh = plantHigh;
         this.edible = edible;
@@ -26,8 +26,8 @@ public class Plant {
         this.latinName = latinName;
     }
 
-    public void setYear(boolean year) {
-        this.year = year;
+    public void setAnnualPlant(boolean annualPlant) {
+        this.annualPlant = annualPlant;
     }
 
     public void setContinent(String continent) {
@@ -55,6 +55,14 @@ public class Plant {
     }
     public int getPlantHigh(){
         return this.plantHigh;
+    }
+
+    public boolean isAnnualPlant(){
+        return annualPlant;
+    }
+
+    public boolean isEdible(){
+        return edible;
     }
 
 

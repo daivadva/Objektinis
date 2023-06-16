@@ -47,7 +47,35 @@ public class Main {
 
 
         Plant plant1 = new Plant();
-        plant1.setName();
+        plant1.setName("Bamboo");
+        plant1.setLatinName("Bambuisoideae");
+        plant1.setAnnualPlant(false);
+        plant1.setContinent("Asia");
+        plant1.setPlantHigh(38);
+        plant1.setEdible(true);
+
+        Plant plant2 = new Plant();
+        plant2.setName("Spider flower");
+        plant2.setLatinName("Grevillea");
+        plant2.setAnnualPlant(false);
+        plant2.setContinent("Australia");
+        plant2.setPlantHigh(3);
+        plant2.setEdible(false);
+
+        Plant plant3 = new Plant("Baobab", "Adansonia", false, "Africa", 25,false);
+
+        Plant plant4 = new Plant("Viola", "Violacea", true, "Europe", 1, true);
+
+       ArrayList<Plant> garden = new ArrayList<>();
+       garden.add(plant1);
+       garden.add(plant2);
+       garden.add(plant3);
+       garden.add(plant4);
+
+        for (int i = 0; i < garden.size(); i++) {
+            System.out.println(garden.get(i).getName() + ", "+ garden.get(i).getLatinName() + ", " +garden.get(i).isAnnualPlant() + ", " +garden.get(i).getContinent() + ", " + garden.get(i).getPlantHigh() + ", "+garden.get(i).isEdible());
+        }
+
 
     }
 
