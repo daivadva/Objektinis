@@ -73,7 +73,7 @@ public class Main {
        garden.add(plant4);
 
         for (int i = 0; i < garden.size(); i++) {
-            System.out.println(garden.get(i).getName() + ", "+ garden.get(i).getLatinName() + ", " +garden.get(i).isAnnualPlant() + ", " +garden.get(i).getContinent() + ", " + garden.get(i).getPlantHigh() + ", "+garden.get(i).isEdible());
+            System.out.println(garden.get(i).getName() + ", "+ garden.get(i).getLatinName() + ", " +(garden.get(i).getAnnualPlant()?"annual":"perential") + ", " +garden.get(i).getContinent() + ", " + garden.get(i).getPlantHigh() + ", "+(garden.get(i).getEdible()?"edible":"notedible"));
         }
 
 
